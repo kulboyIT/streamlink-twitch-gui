@@ -60,7 +60,8 @@ const parameters = [ new ParameterCustom( null, "command" ) ];
 /** @type {RegExp[]} */
 const argFilters = [
 	...( filteredArgv || [] ),
-	/^--user-data-dir=/,
+	/^--enable-crashpad/,
+	/^--nwapp=/,
 	/^--no-sandbox/,
 	/^--no-zygote/,
 	/^--flag-switches-(begin|end)/
